@@ -69,5 +69,40 @@ steps.
 Development with Pivotal Tracker
 --------------------------------
 
-TODO...
+Most projects use `Pivotal Tracker <http://pivotaltracker.com>`_ for task and
+project management. `Bushy <https://github.com/junkafarian/bushy>`_ was written
+to help streamline development when working on these projects.
+
+#. **Get your story(s) straight** - Pivotal is a `Scrum
+   <http://en.wikipedia.org/wiki/Scrum_(development)>`_ / `Scrum-ban
+   <http://en.wikipedia.org/wiki/Scrum_(development)#Scrum-ban>`_ project
+   management tool, so all stories should be listed in order of importance. If
+   you are managing the tasks for the project, list the stories in the order
+   which they should be completed and assign them to the appropriate project
+   member.
+#. **Start a story** - After installing ``Bushy`` use ``git feature`` or ``git
+   bug`` to start a story. This will comment on the pivotal story that you have
+   started it and switch you to a new branch for you to complete the work.
+#. **Commit regularly** - Commit small, self-contained, changes using
+   descriptive commit messages to help make browsing the commit history a less
+   painful experience for everyone.
+#. **Run tests** - Run tests regularly to make sure non of your changes have
+   unexpectedly broken some expected behaviour. If tests are failing and you
+   can't see why, ask for help.
+#. **Finishing up** - Run ``git finish`` to close the story and merge the code
+   back into the master branch.
+#. **Push your changes** - Use ``git push origin master`` to update your github
+   repository with your changes. This will allow the project maintainer to merge
+   them into the main trunk. I hate to use caps here, but **NEVER EVER PUSH
+   CHANGES IF THE TESTS ARE FAILING** if they are, fix them! The master branch
+   should always have tests running through without failures or errors. If tests
+   start failing in the trunk, it's only going to stop others from getting on
+   with their work. If you accidentally push something that breaks tests, let
+   everyone know not to pull from that repo and fix them as fast as you can.
+#. **Merge them into the largeblue trunk** - If you are the project maintainer,
+   push directly to the largeblue repository. Otherwise, please ask the project
+   maintainer to merge your changes into the trunk.
+#. **Ask someone to check it** - The Pivotal story will have been marked as
+   ``Finished``. Ask the Project Manager or whoever is able to quality assure
+   the task to check it over and mark it as ``Delivered``.
 
