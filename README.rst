@@ -10,3 +10,5 @@ Reference
 ---------
 
 - `Python Syntax <https://github.com/largeblue/conventions/blob/master/python_syntax.py>`_
+- `JavaScript Syntax <https://github.com/largeblue/conventions/blob/master/js_syntax.js>`_
+- `CSS Syntax <https://github.com/largeblue/conventions/blob/master/css_syntax.css>`_
