@@ -1,0 +1,48 @@
+/*
+ *
+ * - Use hyphenated-lowercase-names for IDs as well as class names
+ *
+ * - Filenames should be all lowercase in order to avoid confusion on case-sensitive platforms.
+ * - Filenames should end in .js, and should contain no punctuation except for - or _ (prefer - to _).
+ *
+ * - Indent by 4 spaces
+ * - Order properties alphabetically
+ * - Use short-hand notation as much as possible
+ * - Align the colon before the values as in the examples below
+ *
+ */
+body {
+    background      : #f1f1f1 url('this-is-cool.png') 163px 50% no-repeat;
+    color           : #efe;
+    border          : solid 1px #000;
+    float           : left;
+    font            : bold 12px/24px 'Helvetica', 'Verdana', sans-serif;
+    margin          : 0 20px 2px;
+    padding         : 4px 2px 9px 3px;
+}
+
+
+/*
+ * Do not worry about aligning the colons after shorter property names with those after longer property names
+ */
+background.msie {
+    background-image    : url(this-is-horrible.png);
+    background-position : 0 0;
+    color           : #efe;
+}
+
+
+/* short selectors are OK on a single line */
+h1, h2, h3, h4, h5 {
+    font-weight     : bold;
+}
+
+
+/*
+ * Keep a selector per line when they are longer
+ */
+#i-am-a-selector .you-are-looking-for-me,
+#i-am-a-longer-selector,
+#i-am-another-long-selector {
+    background-image: url('../img/round-top.png');
+}
