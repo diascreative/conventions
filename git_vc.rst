@@ -39,31 +39,29 @@ steps.
    branching later).
 #. **Branch** - If the task is anything more than a copy change, branch it! This
    will help when it comes to working on multiple tasks at the same time or
-   working with another developer who is. Run ``git checkout -b BRANCH_NAME``
-   which will put you onto a new branch for you to work on.
+   working with another developer who is. Run ``git checkout -b BRANCH_NAME
+   largeblue/master`` which will put you onto a new branch for you to work on.
 #. **Commit regularly** - Commit small, self-contained, changes using
    descriptive commit messages to help make browsing the commit history a less
    painful experience for everyone.
 #. **Run tests** - Run tests regularly to make sure non of your changes have
    unexpectedly broken some expected behaviour. If tests are failing and you
-   can't see why, ask for help.
-#. **Merge** - ``git checkout master`` to get back to the master branch, ``git
-   merge BRANCH_NAME`` to merge your changes into the trunk and ``git branch -d
-   BRANCH_NAME`` to remove the branch (which isn't necessary any more).
-#. **Update your local repo** - Merge in any changes other developers may have
+   can't see why, ask for help. It's also important to keep an eye on the test
+   coverage to make sure all the code you've added is being tested.
+#. **Merge regularly** - Merge in any changes other developers may have
    comitted while you've been working on this task with ``git pull largeblue
-   master``
-#. **Push your changes** - Use ``git push origin master`` to update your github
-   repository with your changes. This will allow the project maintainer to merge
-   them into the main trunk. I hate to use caps here, but **NEVER EVER PUSH
-   CHANGES IF THE TESTS ARE FAILING** if they are, fix them! The master branch
-   should always have tests running through without failures or errors. If tests
-   start failing in the trunk, it's only going to stop others from getting on
-   with their work. If you accidentally push something that breaks tests, let
-   everyone know not to pull from that repo and fix them as fast as you can.
-#. **Merge them into the largeblue trunk** - If you are the project maintainer,
-   push directly to the largeblue repository. Otherwise, please ask the project
-   maintainer to merge your changes into the trunk.
+   master``. This will make sure there are no nasty surprises when it comes to
+   integrating the work you're doing with the master branch.
+#. **Open a pull request** - Once the development has reached a point to start
+   discussing with other members of the team, open a pull request on github and
+   continue the discussion there. *Remember: this does not mean the code has to
+   be perfect. You can always push more code during the discussion*
+#. **Rope people in** - With the pull request open, ask some other (at the very
+   least one) developers to join in the discussion and comment on your
+   implementation. This will ensure the code quality remains high and everyone
+   has an idea of what's being worked on.
+#. **Merge into master** - Once everyone involved in the discussion on github is
+   happy with the code's functionality and quality, merge it!
 
 
 Development with Pivotal Tracker
