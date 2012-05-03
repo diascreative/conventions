@@ -9,7 +9,7 @@ New functionality
 -----------------
 
 - **Start on an even keel** - Really take the time to understand the task. If
-  something doesn't make sense or you think there's a better way ofimplementing
+  something doesn't make sense or you think there's a better way of implementing
   it, say something.
 - **Don't be shy** - If you need some UIs, designs, someone else to push their
   work, etc. ask the person responsible (nicely).
